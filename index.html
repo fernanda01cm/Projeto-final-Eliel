@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Site pessoal - Sobre mim">
-  <title>Fernanda C Monteiro| Sobre mim</title>
+  <title>Fernanda C. Monteiro | Sobre mim</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="header">
     <nav class="nav container">
-      <a href="#inicio" class="logo">Fernanda <span></span>C.M</a>
+      <a href="#inicio" class="logo">Fernanda <span>C.M</span></a>
 
       <ul class="menu" id="menu">
         <li><a href="#sobre">Sobre</a></li>
@@ -24,13 +24,13 @@
 
       <div class="nav-actions">
         <button id="btn-tema" class="icon-btn" aria-label="Alternar tema claro/escuro">🌙</button>
-        <button id="btn-menu" class="icon-btn menu-toggle" aria-label="Abrir menu">☰</button>
+        <button id="btn-menu" class="icon-btn menu-toggle" aria-label="Abrir menu" aria-controls="menu" aria-expanded="false">☰</button>
       </div>
     </nav>
   </header>
 
   <main>
-    
+
     <section id="inicio" class="hero container">
       <div class="hero-texto">
         <p class="hero-oi">Olá, eu sou</p>
@@ -47,7 +47,7 @@
       </div>
 
       <div class="hero-foto">
-        <img src="img/HERO.jpeg" id="foto">
+        <img src="img/HERO.jpeg" id="foto" alt="Retrato de Fernanda Cristina Monteiro">
       </div>
     </section>
 
@@ -57,16 +57,13 @@
       <div class="sobre-grid">
         <div>
           <p>
-            Eu sou de Brasilia-DF, nascida e criada aqui. O que me fez esse escolher esse curso
-            foi a paixão por técnologia e a grande identificação com gestão de negócios. <n></n>
+            Eu sou de Brasília-DF, nascida e criada aqui. O que me fez escolher esse curso
+            foi a paixão por tecnologia e a grande identificação com gestão de negócios.
             Sempre gostei de ambos e quando fui apresentada ao S.I, senti que finalmente havia encontrado o match.
           </p>
-          <p>
-            Nas horas livres: 
-            <li>Ler</li>
+          <p>Nas horas livres, gosto de:</p><ul class="sobre-interesses"><li>Ler</li>
             <li>Estudar</li>
-            <li>Fazer Jiu-jitsu</li>
-          </p>
+            <li>Fazer Jiu-jitsu</li></ul>
         </div>
         <ul class="infos">
           <li><strong>Idade:</strong> 22 anos</li>
@@ -133,8 +130,8 @@
       <div class="cards">
           <article class="card">
               <span class="card-icone">👘</span>
-    <h3>Jiu-jitsu</h3> 
-    <img src="img/WhatsApp Image 2026-11-12 at 14.33.55.jpeg" alt="Competição de jiu-jitsu">
+    <h3>Jiu-jitsu</h3>
+    <img src="img/jiu-jitsu.jpeg" alt="Competição de jiu-jitsu">
   <p>Pratico jiu-jitsu há cerca de 3 anos, atualmente na faixa azul e participando de competições para acumular mais títulos.</p>
 </article>
         <article class="card">
@@ -159,10 +156,10 @@
       <h2 class="titulo">Entre em <span>contato</span></h2>
       <div class="contato-grid">
         <div class="redes">
-          <p>Vamos conversar? Me chame por uma das redes abaixo ou use o formulário.</p>
+          <p>Vamos conversar? Me chame por uma das redes abaixo ou use o formulário para abrir uma mensagem no seu aplicativo de e-mail.</p>
           <a href="mailto:fernanda.dev.si@gmail.com">📧 fernanda.dev.si@gmail.com</a>
-          <a href="https://github.com/fernanda01cm" target="_blank" rel="noopener">💻 github.com/</a>
-          <a href="https://www.linkedin.com/in/fernanda-cristina-monteiro-84194a433?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">🔗 linkedin.com/in/fernanda cristina Monteiro</a>
+          <a href="https://github.com/fernanda01cm" target="_blank" rel="noopener">💻 github.com/fernanda01cm</a>
+          <a href="https://www.linkedin.com/in/fernanda-cristina-monteiro-84194a433?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">🔗 LinkedIn de Fernanda Cristina Monteiro</a>
         </div>
 
         <form id="form-contato" novalidate>
@@ -185,8 +182,7 @@
   <footer class="footer">
     <p>© <span id="ano"></span> Fernanda Cristina Monteiro. Feito com HTML, CSS e JavaScript.</p>
   </footer>
-<p>© <span id="ano"></span> Fernanda Cristina Monteiro. Todos os direitos reservados.</p>
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
 

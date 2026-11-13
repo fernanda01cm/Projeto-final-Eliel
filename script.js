@@ -26,12 +26,12 @@ btnTema.addEventListener("click", () => {
 const btnMenu = document.getElementById("btn-menu");
 const menu = document.getElementById("menu");
 
-btnMenu.addEventListener("click", () => menu.classList.toggle("aberto"));
+btnMenu.addEventListener("click", () => { const aberto = menu.classList.toggle("aberto"); btnMenu.setAttribute("aria-expanded", String(aberto)); });
 menu.querySelectorAll("a").forEach(link =>
-  link.addEventListener("click", () => menu.classList.remove("aberto"))
+  link.addEventListener("click", () => { menu.classList.remove("aberto"); btnMenu.setAttribute("aria-expanded", "false"); })
 );
 
-const frases = ["estudante universitário(a)", "futuro(a) profissional de TI", "curioso(a) por tecnologia"];
+const frases = ["estudante universitária", "futura profissional de TI", "curiosa por tecnologia"];
 const alvo = document.getElementById("digitando");
 let fraseAtual = 0;
 let letraAtual = 0;
@@ -77,13 +77,13 @@ foto.addEventListener("error", () => {
     `<svg xmlns="http://www.w3.org/2000/svg" width="340" height="340">
        <rect width="100%" height="100%" fill="#4f46e5"/>
        <text x="50%" y="54%" font-size="120" fill="white" text-anchor="middle"
-             dominant-baseline="middle" font-family="Arial">SN</text>
+             dominant-baseline="middle" font-family="Arial">FM</text>
      </svg>`
   );
 }, { once: true });
 
 
-const EMAIL_DESTINO = "seuemail@exemplo.com"; // troque pelo seu e-mail
+const EMAIL_DESTINO = "fernanda.dev.si@gmail.com";
 
 const form = document.getElementById("form-contato");
 const aviso = document.getElementById("form-aviso");
